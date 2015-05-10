@@ -360,8 +360,10 @@
             var deferred = $.Deferred();
             var returnedData;
             var videoDimensions = this.dimensions(opts);
+            var id;
             if (url.match(this.ytRegex)) {
-                $.getJSON('https://www.googleapis.com/youtube/v3/videos?id=' + RegExp.$1 + '&key=' + opts.gdevAuthKey + '&part=snippet,statistics').success(function (d) {
+                id=RegExp.$1;
+                $.getJSON('https://www.googleapis.com/youtube/v3/videos?id=' + id + '&key=' + opts.gdevAuthKey + '&part=snippet,statistics').success(function (d) {
                     var ytData = d.items[0];
                     video.host = 'youtube';
                     video.title = ytData.snippet.title;
@@ -370,7 +372,7 @@
                     video.rawDescription = ytData.snippet.description;
                     video.views = ytData.statistics.viewCount;
                     video.likes = ytData.statistics.likeCount;
-                    video.url = 'https://www.youtube.com/watch?v=' + RegExp.$1;
+                    video.url = 'https://www.youtube.com/watch?v=' + id;
                     video.width = videoDimensions.width;
                     video.height = videoDimensions.height;
                     video.id = ytData.id;
@@ -380,7 +382,8 @@
                 });
             }
             else if (url.match(this.vimeoRegex)) {
-                $.getJSON('https://vimeo.com/api/v2/video/' + RegExp.$3 + '.json').success(function (d) {
+                id=RegExp.$3;
+                $.getJSON('https://vimeo.com/api/v2/video/' + id + '.json').success(function (d) {
 
                     video.host = 'vimeo';
                     video.title = d[0].title;
@@ -714,10 +717,8 @@
 
                 $(elem).find('.ejs-image').each(function () {
                     $(this).click(function () {
-                        console.log($(this).find('img'));
                         var imgElement = $(this).find('img')[0].outerHTML;
                         var template = '<div class="ejs-lightbox"><div class="ejs-lightbox-wrapper">' + imgElement + '</div><i class="fa fa-remove"></i></div>';
-                        console.log(template);
                         $('body').append(template);
 
                         $('.ejs-lightbox>i').click(function () {
