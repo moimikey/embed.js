@@ -60,6 +60,7 @@
     border-bottom  : 0;
     padding-bottom : 1px;
     box-sizing     : border-box;
+    min-height: 150px;
 }
 
 .ejs-embed iframe {
@@ -167,6 +168,10 @@ code.has-numbering {
     -ms-transition     : all 0.5s linear;
     -kthtml-transition : all 0.5s linear;
     transition         : all 0.5s linear;
+}
+
+.ejs-instagram{
+    width : 420px;
 }
 
 .ejs-doc-view button:hover {
@@ -397,7 +402,6 @@ code.has-numbering {
     width: 16px;
 }
 .noembed-embed .favicon img {
-    width: 16px;
     width: 16px;
     display: inline-block;
     margin: 0;

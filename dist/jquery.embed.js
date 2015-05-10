@@ -1,6 +1,6 @@
 /*
- *  embed-js - v2.0.5
- *  A jQuery plugin that analyses the string and automatically embeds the supported emojis, media, maps, tweets, code and services.
+ *  embed-js - v2.0.6
+ *  A jQuery plugin that analyses the string and automatically embeds emojis, media, maps, tweets, code and services.
  *  http://rkritesh.in/embed.js
  *
  *  Made by Ritesh Kumar
@@ -705,7 +705,7 @@
             var matches;
             while ((matches = instagramRegex.exec(rawStr)) !== null) {
 
-                var template = '<div class="ejs-embed"><iframe src="' + matches[0].toUrl() + '/embed/" width="' + dimensions.width + '" height="' + dimensions.height + '"></iframe></div>';
+                var template = '<div class="ejs-embed ejs-instagram"><iframe src="' + matches[0].toUrl() + '/embed/" width="' + dimensions.width + '" height="' + dimensions.height + '"></iframe></div>';
                 embedArray.push(createObject(matches.index, template));
 
             }

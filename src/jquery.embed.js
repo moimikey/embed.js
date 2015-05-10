@@ -697,7 +697,7 @@
             var matches;
             while ((matches = instagramRegex.exec(rawStr)) !== null) {
 
-                var template = '<div class="ejs-embed"><iframe src="' + matches[0].toUrl() + '/embed/" width="' + dimensions.width + '" height="' + dimensions.height + '"></iframe></div>';
+                var template = '<div class="ejs-embed ejs-instagram"><iframe src="' + matches[0].toUrl() + '/embed/" width="' + dimensions.width + '" height="' + dimensions.height + '"></iframe></div>';
                 embedArray.push(createObject(matches.index, template));
 
             }
