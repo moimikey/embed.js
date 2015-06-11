@@ -1,7 +1,12 @@
 site_name: embed.js
+site_description: A jQuery plugin that analyses the string and automatically embeds emojis, media, maps, tweets, code and services
 pages:
 - Home: index.md
-- Features: features.md
+- Getting Started: gettingStarted.md
+- How to use ?: usage.md
 - Documentation: documentation.md
+- Changelogs: history.md
 theme: readthedocs
 extra_css: ["custom/custom.css"]
+site_favicon: img/favicon.ico
+repo_url: https://github.com/ritz078/embed.js

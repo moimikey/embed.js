@@ -110,3 +110,5 @@ $('#element').embedJS({
 });
 </script>
 ```
+
+If you specify either one of **videoWidth** or **videoHeight** , the other option will be automatically set in the aspected ratio.
