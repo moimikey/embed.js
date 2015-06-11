@@ -1,0 +1,7 @@
+site_name: embed.js
+pages:
+- Home: index.md
+- Features: features.md
+- Documentation: documentation.md
+theme: readthedocs
+extra_css: ["custom/custom.css"]
