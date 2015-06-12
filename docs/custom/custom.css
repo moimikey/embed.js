@@ -1,4 +1,13 @@
 code{
+	font-size:13px;
+	padding: 5px;
+	display:inline-block;
+	margin: 2px 0;
+	vertical-align:middle;
+	border-radius:3px;
+}
+
+pre code{
     font-size: 13px;
     padding: 10px !important;
     border-radius: 3px;

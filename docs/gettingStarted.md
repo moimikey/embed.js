@@ -38,6 +38,19 @@ Loading the scripts
 <script src="path/to/jquery.embed.js"></script>
 ```
 
+##Browserify Support
+
+This plugin is [UMD](https://github.com/umdjs/umd) compatible so you can use it with browserify.
+
+```javascript
+var jquery = require('jquery');
+require('embed-js');
+
+jquery('#element').embedJS({
+    gdevAuthKey : 'xxxxxxxx'
+});
+```
+
 
 
 
