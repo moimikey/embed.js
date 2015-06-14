@@ -7,7 +7,7 @@
 
 **A jQuery plugin that analyses the string and automatically embeds emojis, media, maps, tweets, code and services.**
 
-
+![demo](img/demo.gif)
 
 ##Features
 
@@ -25,11 +25,19 @@
 * Google map location embed
 
 <style>
-   img{
+   img[alt="logo"]{
     width:200px;
     display:block;
     margin:10px auto;
    }
+
+img[alt="demo"]{
+  width: 80%;
+  display:block;
+  margin: 0 auto;
+  border:1px solid #eee;
+  border-radius:3px;
+}
    
    iframe {
     width:120px;

@@ -1,12 +1,16 @@
 site_name: embed.js
-site_description: A jQuery plugin that analyses the string and automatically embeds emojis, media, maps, tweets, code and services
+site_url: http://embedjs.com
+site_author: Ritesh Kumar
+site_description: A jQuery plugin that analyses the string and automatically embeds emojis, media, maps, tweets, code and services.
 pages:
 - Home: index.md
 - Getting Started: gettingStarted.md
 - How to use ?: usage.md
 - Documentation: documentation.md
+- Working Examples: examples.md
 - Changelogs: history.md
 theme: readthedocs
 extra_css: ["custom/custom.css"]
 site_favicon: img/favicon.ico
 repo_url: https://github.com/ritz078/embed.js
+google_analytics: ['UA-60624235-2', 'rkritesh.in/embed.js']
